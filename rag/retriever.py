@@ -13,10 +13,10 @@ class Retriever:
     def get_retriever(self):
         try:
             # This text splitter is used to create the parent documents
-            parent_splitter = RecursiveCharacterTextSplitter(chunk_size=600,chunk_overlap=20)
+            parent_splitter = RecursiveCharacterTextSplitter(chunk_size=1500,chunk_overlap=20)
             # This text splitter is used to create the child documents
             # It should create documents smaller than the parent
-            child_splitter = RecursiveCharacterTextSplitter(chunk_size=1000,chunk_overlap=20)
+            child_splitter = RecursiveCharacterTextSplitter(chunk_size=600,chunk_overlap=20)
             # The vectorstore to use to index the child chunks
             vectorstore = Chroma(
                 collection_name="contract", embedding_function=self.embedding,persist_directory=self.persist_directory

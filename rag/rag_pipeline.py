@@ -27,9 +27,15 @@ class RAGPipeline:
         #vector_store = VectorStore(chunks,embedding,self.vector_db_path)
         #vectorstore = vector_store.create_vector_store()
         retriever = Retriever(documents,embedding,self.vector_db_path).get_retriever()
+        print("Retriever Created Successfully!")
+        return retriever
+    
+    def qa_chain(self):
         chat_model = ChatModel(GPT_MODEL_NAME).initialize_chat_model()
+        retriever = self.pipeline()
         conversation_chain = ConversationChain().create_retrieval_qa_chain(chat_model,retriever)
         return conversation_chain
+
 
         
         

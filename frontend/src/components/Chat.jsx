@@ -161,7 +161,7 @@ function Chat() {
               />
               <a
                 onClick={askAI}
-                href="#send_message"
+                
                 id="send-it"
                 className="send_it"
               >
@@ -178,7 +178,7 @@ function Chat() {
         <a
           onClick={openChart}
           className="blantershow-chat"
-          href="#load_chart"
+          
           title="Show Chat"
         >
           <Svg />

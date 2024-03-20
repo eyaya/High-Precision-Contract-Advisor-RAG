@@ -30,7 +30,6 @@ function Upload() {
     .then((response) => response.json())
     .then(data => {
       console.log(data);
-      router.push('/#chat');
       
     })
     .catch((error) => {

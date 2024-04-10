@@ -78,9 +78,11 @@ function Chat() {
     <div>
       <section id="about" className="py-10 text-white">
         <div className="mt-10">
+
           <h3 className="text-4xl font-semibold text-justify leading-7 w-11/12 mx-auto">
           High-Precision Legal Expert LLM APP <span className="text-cyan-600">Contract Advisor RAG</span>
           </h3>
+
           <h3 className="text-2xl font-semibold text-justify leading-7 w-11/12 mx-auto pt-10">
             10 Academy Cohort A weekly challenge: Week 11. 
           </h3>
@@ -94,8 +96,8 @@ function Chat() {
           <h3 className="text-2xl font-semibold text-justify leading-7 w-11/12 mx-auto pt-10">
           Project Methodology:
           </h3>
-          <p className="text-justify leading-7 w-11/12 mx-auto">The project consists of the following tasks:
-          <ul>
+          <p className="text-justify leading-7 w-11/12 mx-auto">The project consists of the following tasks:</p>
+          <ul className="text-justify leading-7 w-11/12 mx-auto">
             <li>Task 1: Research ways to improve RAG systems in general.</li>
             <li>Task 2: Build simple Q&A pipeline with RAG using Langchain</li>
             <li>Task 3: Build a RAG evaluation pipeline with RAGAS</li>
@@ -103,15 +105,15 @@ function Chat() {
             <li>Task 5: Implement at least two enhancements</li>
             <li>Task 6: Interpretation & Reporting</li>
           </ul>
-          </p>
-          <div class="flex flex-row-reverse ...">
-            <div class="grid grid-cols-1">
+          
+          <div className="flex flex-row-reverse ...">
+            <div className="grid grid-cols-1">
               <div>
                 <h3 className="text-2xl font-semibold text-justify leading-7 mx-auto pt-10">
                 Tech-Stacks Used:
                 </h3>
-                <p className="text-justify leading-7  mx-auto">
-                  <ul>
+                
+                  <ul className="text-justify leading-7  mx-auto">
                     <li><span className="text-cyan-600">Large Language Model:</span> GPT-3, GPT-4,Langchain</li>
                     <li><span className="text-cyan-600">Chunking:</span> RecursiveCharacterTextSplitter</li>
                     <li><span className="text-cyan-600">Vector Store:</span> Chroma</li>
@@ -119,7 +121,7 @@ function Chat() {
                     <li><span className="text-cyan-600">Generation and Embedding:</span> OpenAI</li>
                     <li><span className="text-cyan-600">Evaluation:</span> RAGAS</li>
                   </ul>
-                </p>
+                
               </div>
             </div>
           </div>
